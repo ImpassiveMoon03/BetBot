@@ -11,7 +11,7 @@ Bot.on('ready', async () => {
     console.log("Logged In!")
     let guild = await Bot.guilds.cache.get(process.env.TEST_SERVER)
 
-    let commands = fs.readdirSync(".src/commands")
+    let commands = fs.readdirSync("src/commands")
     for(var i = 0; i<commands.length; i++){
         let cmd = require(`./commands/${commands[i]}`)
         Bot.commands.set(cmd.name, cmd)
