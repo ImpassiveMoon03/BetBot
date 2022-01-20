@@ -1,0 +1,21 @@
+{
+  "name": "betbot",
+  "version": "1.0.0",
+  "description": "A discord bot meant for a sort of horse betting experience",
+  "main": "src/index.js",
+  "scripts": {
+    "setup": "touch .env && echo \"TOKEN=bot_token\nTEST_SERVER=ID\" >> .env $$ echo \"Enter the .env file and replace bot_token and ID to the correct values\""
+  },
+  "keywords": [
+    "discord",
+    "bot",
+    "betting",
+    "bet"
+  ],
+  "author": "Robert Offord",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^13.6.0",
+    "dotenv": "^11.0.0"
+  }
+}
